@@ -9,7 +9,6 @@
         <artifactId>BlossomGateway</artifactId>
         <version>1.0</version>
     </parent>
-
     <artifactId>BlossomGateway-Core</artifactId>
 
 

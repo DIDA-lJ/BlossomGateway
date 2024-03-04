@@ -15,12 +15,13 @@
         <module>BlossomGateway-Common</module>
         <module>BlossomGateway-Client</module>
         <module>BlossomGateway-Dubbo</module>
-        <module>BlossomGateway-Http</module>
+        <module>BlossomGateway-HttpServer</module>
         <module>BlossomGateway-Config-Center</module>
         <module>BlossomGateway-Register-Center</module>
         <module>BlossomRPC-Core</module>
         <module>BlossomRPC-Server</module>
         <module>BlossomRPC-Client</module>
+        <module>BlossomGateway-UserService</module>
     </modules>
     <properties>
         <maven.compiler.source>19</maven.compiler.source>
