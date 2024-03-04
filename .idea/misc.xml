@@ -12,6 +12,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/BlossomGateway-Http/pom.xml" />
+        <option value="$PROJECT_DIR$/BlossomGateway-HttpServer/pom.xml" />
       </list>
     </option>
   </component>
