@@ -1,4 +1,4 @@
-package response;
+package blossom.gateway.common.response;
 
 import io.netty.handler.codec.http.HttpResponseStatus;
 import lombok.AllArgsConstructor;
