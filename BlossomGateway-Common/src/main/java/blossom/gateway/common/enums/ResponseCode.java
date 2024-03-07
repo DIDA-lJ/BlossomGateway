@@ -1,4 +1,4 @@
-package enums;
+package blossom.gateway.common.enums;
 
 import io.netty.handler.codec.http.HttpResponseStatus;
 import lombok.Getter;
