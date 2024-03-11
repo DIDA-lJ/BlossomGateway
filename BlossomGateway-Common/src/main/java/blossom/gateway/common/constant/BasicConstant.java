@@ -8,18 +8,52 @@ import java.util.regex.Pattern;
  * @description BasicConstant 基础常量类
  */
 
-public class BasicConstant {
+public interface BasicConstant {
 
-    public static final String HTTP_PREFIX_SEPARATOR = "http://";
-    public static final String HTTPS_PREFIX_SEPARATOR = "https://";
-    public static final String DATE_FORMAT = "yyyy-MM-dd HH:mm:ss";
-    public static final String DEFAULT_CHARSET = "UTF-8";
-    public static final String HTTP_FORWARD_SEPARATOR = "https://";
-    public static final Pattern PARAM_PATTERN = Pattern.compile("\\{(.*?)\\}");
-    public static final String ENABLE = "Y";
-    public static final String DISABLE = "N";
-    public static final String BAR_SEPARATOR = "-";
-    public static final String COLON_SEPARATOR = ":";
-    public static final String DOT_SEPARATOR = ".";
+    String DEFAULT_CHARSET = "UTF-8";
+
+    String PATH_SEPARATOR = "/";
+
+    String PATH_PATTERN = "/**";
+
+    String QUESTION_SEPARATOR = "?";
+
+    String ASTERISK_SEPARATOR = "*";
+
+    String AND_SEPARATOR = "&";
+
+    String EQUAL_SEPARATOR = "=";
+
+    String BLANK_SEPARATOR_1 = "";
+
+    String BLANK_SEPARATOR_2 = " ";
+
+    String COMMA_SEPARATOR = ",";
+
+    String SEMICOLON_SEPARATOR = ";";
+
+    String DOLLAR_SEPARATOR = "$";
+
+    String PIPELINE_SEPARATOR = "|";
+
+    String BAR_SEPARATOR = "-";
+
+    String COLON_SEPARATOR = ":";
+
+    String DIT_SEPARATOR = ".";
+
+    String HTTP_PREFIX_SEPARATOR = "http://";
+
+    String HTTPS_PREFIX_SEPARATOR = "https://";
+
+    String HTTP_FORWARD_SEPARATOR = "X-Forwarded-For";
+
+    Pattern PARAM_PATTERN = Pattern.compile("\\{(.*?)\\}");
+
+    String DATE_FORMAT = "yyyy-MM-dd HH:mm:ss";
+
+    String ENABLE = "Y";
+
+    String DISABLE = "N";
 
 }
