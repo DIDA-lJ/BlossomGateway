@@ -2,24 +2,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>BlossomGateway</artifactId>
-        <groupId>blossom.project</groupId>
-        <version>1.0</version>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>blossom.project</groupId>
+        <artifactId>BlossomGateway</artifactId>
+        <version>1.0</version>
+    </parent>
     <artifactId>BlossomGateway-Config-Center</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>BlossomGateway-Config-Center-Api</module>
-        <module>BlossomGateway-Config-Center-Nacos-Impl</module>
-    </modules>
 
     <properties>
         <maven.compiler.source>19</maven.compiler.source>
         <maven.compiler.target>19</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
 </project>
