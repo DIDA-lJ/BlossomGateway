@@ -10,6 +10,7 @@
     <!-- 确保这里是 "pom" -->
     <packaging>pom</packaging>
 
+
     <modules>
         <module>BlossomGateway-Core</module>
         <module>BlossomGateway-Common</module>
@@ -18,10 +19,6 @@
         <module>BlossomGateway-HttpServer</module>
         <module>BlossomGateway-Config-Center</module>
         <module>BlossomGateway-Register-Center</module>
-        <module>BlossomRPC-Core</module>
-        <module>BlossomRPC-Server</module>
-        <module>BlossomRPC-Client</module>
-        <module>BlossomGateway-UserService</module>
     </modules>
     <properties>
         <maven.compiler.source>19</maven.compiler.source>
@@ -60,7 +57,6 @@
             <artifactId>netty-all</artifactId>
             <version>${netty.version}</version>
         </dependency>
-
         <dependency>
             <groupId>org.asynchttpclient</groupId>
             <artifactId>async-http-client</artifactId>
@@ -142,14 +138,4 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>cn.hutool</groupId>
-                <artifactId>hutool-all</artifactId>
-                <version>4.5.11</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 </project>
