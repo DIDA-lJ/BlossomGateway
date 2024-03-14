@@ -14,15 +14,21 @@ import java.util.stream.Collectors;
  */
 
 public class DynamicConfigManager {
-
-    //	服务的定义集合：uniqueId代表服务的唯一标识
-    private ConcurrentHashMap<String /* uniqueId */ , ServiceDefinition> serviceDefinitionMap = new ConcurrentHashMap<>();
-
-    //	服务的实例集合：uniqueId与一对服务实例对应
-    private ConcurrentHashMap<String /* uniqueId */ , Set<ServiceInstance>>  serviceInstanceMap = new ConcurrentHashMap<>();
-
-    //	规则集合
-    private ConcurrentHashMap<String /* ruleId */ , Rule>  ruleMap = new ConcurrentHashMap<>();
+    /**
+     * 服务的定义集合：uniqueId代表服务的唯一标识
+     * uniqueId  String
+     */
+    private ConcurrentHashMap<String, ServiceDefinition> serviceDefinitionMap = new ConcurrentHashMap<>();
+    /**
+     * 服务的实例集合：uniqueId与一对服务实例对应
+     * uniqueId String
+     */
+    private ConcurrentHashMap<String  , Set<ServiceInstance>> serviceInstanceMap = new ConcurrentHashMap<>();
+    /**
+     * 规则集合
+     * ruleId String
+     */
+    private ConcurrentHashMap<String  , Rule> ruleMap = new ConcurrentHashMap<>();
 
     private DynamicConfigManager() {
     }
@@ -41,7 +47,7 @@ public class DynamicConfigManager {
     public void putServiceDefinition(String uniqueId,
                                      ServiceDefinition serviceDefinition) {
 
-        serviceDefinitionMap.put(uniqueId, serviceDefinition);;
+        serviceDefinitionMap.put(uniqueId, serviceDefinition);
     }
 
     public ServiceDefinition getServiceDefinition(String uniqueId) {
@@ -58,7 +64,7 @@ public class DynamicConfigManager {
 
     /***************** 	对服务实例缓存进行操作的系列方法 	***************/
 
-    public Set<ServiceInstance> getServiceInstanceByUniqueId(String uniqueId){
+    public Set<ServiceInstance> getServiceInstanceByUniqueId(String uniqueId) {
         return serviceInstanceMap.get(uniqueId);
     }
 
@@ -74,9 +80,9 @@ public class DynamicConfigManager {
     public void updateServiceInstance(String uniqueId, ServiceInstance serviceInstance) {
         Set<ServiceInstance> set = serviceInstanceMap.get(uniqueId);
         Iterator<ServiceInstance> it = set.iterator();
-        while(it.hasNext()) {
+        while (it.hasNext()) {
             ServiceInstance is = it.next();
-            if(is.getServiceInstanceId().equals(serviceInstance.getServiceInstanceId())) {
+            if (is.getServiceInstanceId().equals(serviceInstance.getServiceInstanceId())) {
                 it.remove();
                 break;
             }
@@ -87,9 +93,9 @@ public class DynamicConfigManager {
     public void removeServiceInstance(String uniqueId, String serviceInstanceId) {
         Set<ServiceInstance> set = serviceInstanceMap.get(uniqueId);
         Iterator<ServiceInstance> it = set.iterator();
-        while(it.hasNext()) {
+        while (it.hasNext()) {
             ServiceInstance is = it.next();
-            if(is.getServiceInstanceId().equals(serviceInstanceId)) {
+            if (is.getServiceInstanceId().equals(serviceInstanceId)) {
                 it.remove();
                 break;
             }
