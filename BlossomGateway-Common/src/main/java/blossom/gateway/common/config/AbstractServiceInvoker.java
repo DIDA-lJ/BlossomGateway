@@ -5,7 +5,6 @@ package blossom.gateway.common.config;
  * @version 1.0.0
  * @description 抽象的服务调用接口实现类
  */
-
 public class AbstractServiceInvoker implements ServiceInvoker {
 
     protected String invokerPath;
