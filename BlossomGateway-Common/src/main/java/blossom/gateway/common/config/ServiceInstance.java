@@ -8,7 +8,6 @@ import java.util.Objects;
  * @version 1.0.0
  * @description
  */
-
 public class ServiceInstance implements Serializable {
 
     private static final long serialVersionUID = -7559569289189228478L;
