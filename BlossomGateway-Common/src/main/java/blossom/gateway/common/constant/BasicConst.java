@@ -5,10 +5,10 @@ import java.util.regex.Pattern;
 /**
  * @author linqi
  * @version 1.0.0
- * @description BasicConstant 基础常量类
+ * @description
  */
 
-public interface BasicConstant {
+public interface BasicConst {
 
     String DEFAULT_CHARSET = "UTF-8";
 
