@@ -1,4 +1,4 @@
-package blossom.gateway.common.constant;
+package blossom.project.common.constant;
 
 import java.util.regex.Pattern;
 
