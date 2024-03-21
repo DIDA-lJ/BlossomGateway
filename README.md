@@ -2,6 +2,8 @@
 ## 项目架构图
 ![image](https://github.com/DIDA-lJ/BlossomGateWay/assets/97254796/d9cb1e54-1ee0-4c24-b333-acd27e1f69b0)
 
+## 开发文档（项目细节可以看开发文档）
+https://www.yuque.com/zeovo-10k9s/lqwlrb/qyhycrlgwgvtag2a?singleDoc# 《BlossmGateWay 网关技术文档》
 
 
 ## 网关处理流程
