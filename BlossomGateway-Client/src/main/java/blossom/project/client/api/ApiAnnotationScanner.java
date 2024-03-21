@@ -1,11 +1,11 @@
 package blossom.project.client.api;
 
-import blossom.gateway.common.config.DubboServiceInvoker;
-import blossom.gateway.common.config.HttpServiceInvoker;
-import blossom.gateway.common.config.ServiceDefinition;
-import blossom.gateway.common.config.ServiceInvoker;
-import blossom.gateway.common.constant.BasicConst;
-import blossom.gateway.common.constant.DubboConstants;
+import blossom.project.common.config.DubboServiceInvoker;
+import blossom.project.common.config.HttpServiceInvoker;
+import blossom.project.common.config.ServiceDefinition;
+import blossom.project.common.config.ServiceInvoker;
+import blossom.project.common.constant.BasicConst;
+import blossom.project.common.constant.DubboConstants;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.dubbo.config.ProviderConfig;
 import org.apache.dubbo.config.spring.ServiceBean;
