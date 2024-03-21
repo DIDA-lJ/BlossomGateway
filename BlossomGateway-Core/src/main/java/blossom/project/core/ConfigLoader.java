@@ -1,6 +1,6 @@
-package blossom.gateway.core;
+package blossom.project.core;
 
-import blossom.gateway.common.utils.PropertiesUtils;
+import blossom.project.common.utils.PropertiesUtils;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
@@ -13,7 +13,6 @@ import java.util.Properties;
  * @version 1.0.0
  * @description
  */
-
 @Slf4j
 public class ConfigLoader {
     private static final String CONFIG_FILE = "gateway.properties";
