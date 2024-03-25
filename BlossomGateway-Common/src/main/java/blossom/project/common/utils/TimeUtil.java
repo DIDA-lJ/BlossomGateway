@@ -1,6 +1,4 @@
-package blossom.gateway.common.utils;
-
-import blossom.gateway.common.enums.ResponseCode;
+package blossom.project.common.utils;
 
 import java.util.concurrent.TimeUnit;
 

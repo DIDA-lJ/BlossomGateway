@@ -1,4 +1,4 @@
-package blossom.gateway.core;
+package blossom.project.core;
 
 import java.util.Properties;
 import java.util.concurrent.atomic.AtomicInteger;

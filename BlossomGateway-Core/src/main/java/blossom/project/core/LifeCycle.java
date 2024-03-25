@@ -1,4 +1,4 @@
-package blossom.gateway.core;
+package blossom.project.core;
 
 /**
  * @InterfaceName LifeCycle
