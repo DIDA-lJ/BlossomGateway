@@ -1,4 +1,4 @@
-package blossom.gateway.common.config;
+package blossom.project.common.config;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
