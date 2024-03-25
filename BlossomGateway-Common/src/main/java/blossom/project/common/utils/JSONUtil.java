@@ -1,4 +1,4 @@
-package blossom.gateway.common.utils;
+package blossom.project.common.utils;
 
 import com.fasterxml.jackson.annotation.JsonFilter;
 import com.fasterxml.jackson.annotation.JsonInclude;
