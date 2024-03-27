@@ -1,4 +1,4 @@
-package blossom.gateway.common.utils;
+package blossom.project.common.utils;
 
 import java.lang.reflect.Method;
 import java.util.Properties;
