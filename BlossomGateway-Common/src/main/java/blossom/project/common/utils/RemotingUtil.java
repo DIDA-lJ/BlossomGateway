@@ -1,4 +1,4 @@
-package blossom.gateway.common.utils;
+package blossom.project.common.utils;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;

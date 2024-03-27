@@ -1,8 +1,8 @@
 
-package blossom.gateway.common.exception;
+package blossom.project.common.exception;
 
 
-import blossom.gateway.common.enums.ResponseCode;
+import blossom.project.common.enums.ResponseCode;
 
 public class ResponseException extends BaseException {
 

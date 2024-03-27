@@ -1,4 +1,4 @@
-package blossom.gateway.common.utils;
+package blossom.project.common.utils;
 
 import org.apache.commons.lang3.StringUtils;
 
