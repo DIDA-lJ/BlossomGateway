@@ -149,6 +149,18 @@ Etcd虽然是通⽤的键值对分布式存储系统，可以很好的应⽤于�
 
 ⽽配置中⼼⽅⾯，有SpringCloud Config，Apollo，Nacos，这⾥很明显，依旧选择Nacos，因为Nacos不仅仅是注册中⼼也是配置中⼼。因此选⽤Nacos我们可以减少引⼊不必要的第三⽅组件。
 
+### 多协议支持
+可以考虑的有gRPC和Dubbo，gRPC⽀持多种语⾔，并且基于HTTP/2.0，Dubbo在Alibaba使⽤的⽐较多，并且⽐较适合Java的⽣态。同时gRPC的使⽤要求熟悉Protobuf，所以这⾥为了减少成本，考虑使⽤Dubbo。
+
+所以，经过分析，可以得出最终的技术栈如下：
+1. 开发语言： Java （JDK 19）
+2. 网络通信框架：Netty 4.1.51
+3. 缓存：Redis、Caffeine 版本不限
+4. 注册中心与配置中心：Dubbo 2.7.x
+5. 日志监控：Prometheus、Grafana 版本不限
+6. RPC 协议：Dubbo 2.7.x
+7. 安全鉴权：JWT 版本不限
+
 
 ## 项目架构图
 ![image](https://github.com/DIDA-lJ/BlossomGateWay/assets/97254796/d9cb1e54-1ee0-4c24-b333-acd27e1f69b0)
