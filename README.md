@@ -163,7 +163,29 @@ Etcd虽然是通⽤的键值对分布式存储系统，可以很好的应⽤于�
 
 
 ## 项目架构图
+基于以上分析之后，我们可以画出以下架构图：
 ![image](https://github.com/DIDA-lJ/BlossomGateWay/assets/97254796/d9cb1e54-1ee0-4c24-b333-acd27e1f69b0)
+
+- Common：维护公共代码，⽐如枚举
+- Client：客户端模块，⽅便我们其他模块接⼊⽹关
+- Register Center：注册中⼼模块
+- Config Center：配置中⼼模块
+- Container：包含核⼼功能
+- Context：请求上下⽂，规则
+- FilterChain：通过责任链模式，链式执⾏过滤器
+- FlowFilter：流控过滤器
+- LoadBalanceFilter：负载均衡过滤器
+- RouterFilter：路由过滤器
+- TimeoutFilter：超时过滤器
+- OtherFilter：其他过滤器
+- NettyHttpServer：接收外部请求并在内部进⾏流转
+- Processor：后台请求处理
+- Flusher：性能优化
+- MPMC：性能优化
+- SPI Loader：扩展加载器
+- Plugin Loader：插件加载器
+- Dynamic Loader：动态配置加载器
+- Config Loader：静态配置加载器
 
 
 ## 网关处理流程
