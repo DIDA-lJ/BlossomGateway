@@ -189,7 +189,7 @@ Etcd虽然是通⽤的键值对分布式存储系统，可以很好的应⽤于�
 
 
 ## 网关处理流程
-
+根据上⾯的分析，我们可以得到如下的⼀个处理流程。
 ![image](https://github.com/DIDA-lJ/BlossomGateWay/assets/97254796/5274487c-760a-4525-8ddc-e10bfb276222)
 
 ## 开发文档
