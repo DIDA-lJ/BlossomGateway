@@ -193,12 +193,6 @@ Etcd虽然是通⽤的键值对分布式存储系统，可以很好的应⽤于�
 根据上⾯的分析，我们可以得到如下的⼀个处理流程。
 ![image](https://github.com/DIDA-lJ/BlossomGateWay/assets/97254796/5274487c-760a-4525-8ddc-e10bfb276222)
 
-## 开发文档
-项目具体细节可以查看开发文档（语雀中查看）
-
-<a href="https://www.yuque.com/zeovo-10k9s/lqwlrb/qyhycrlgwgvtag2a?singleDoc# 《BlossmGateWay 网关技术文档》">
-项目开发文档
-</a>
 
 
 
